@@ -1,15 +1,23 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int i, sum;
+int main() {
 
-	sum = 0;
-	for (i = 0; i < 1024; i++)
-	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
-	}
-	printf("%d\n", sum);
-	return (0);
+  int i;
+  long long t1, t2,nextTerm ;
+
+  t1 = 0;
+  t2 = 1;
+  nextTerm = t1 + t2;
+
+
+  printf("%lli, %lli, ", t1, t2);
+
+  for (i = 3; i <= 50; ++i) {
+    printf("%lli, ", nextTerm);
+    t1 = t2;
+    t2 = nextTerm;
+    nextTerm = t1 + t2;
+  }
+  printf("\n");
+  return 0;
 }
