@@ -7,10 +7,13 @@
  *
  */int main(void)
 {
-	char i;
+	int i;
 
-	for (i ='0'; i <= '9'; i++)
-		putchar(i);
+	for (i =0; i <= 9; i++)
+	{
+		if (i != 2 && i != 4)
+			putchar(i + 48);
+	}
 	putchar('\n');
 	return (0);
 }
