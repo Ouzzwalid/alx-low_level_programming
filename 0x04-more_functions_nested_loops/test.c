@@ -5,15 +5,22 @@
  *
  *Return: No return
  *
- */int main(void)
+ */
+int main(void)
 {
-	int i;
+	int i, j;
 
-	for (i =0; i <= 9; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		if (i != 2 && i != 4)
-			putchar(i + 48);
+		for (j = 0; j <= 14; j++)
+		{
+			if (j > 9)
+				putchar((j/10) + 48);
+			putchar((j%10)+48);
+		}
+	
+
+		putchar('\n');
 	}
-	putchar('\n');
 	return (0);
 }
