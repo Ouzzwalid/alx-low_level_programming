@@ -8,15 +8,23 @@
  */
 int main(void)
 {
-	int i, n;
+	int i, j, n;
 
 	printf("enter n : ");
 	scanf("%d", &n);
 	if (n > 0)
 	{
 		for (i = 0; i < n; i++)
-			putchar('#');
-		putchar('\n');
+		{
+			j = 0;
+			while(j < i)
+			{
+				putchar('.');
+				j++;
+			}
+			putchar('\\');
+			putchar('\n');
+		}
 	}
 	else
 		putchar('\n');	
