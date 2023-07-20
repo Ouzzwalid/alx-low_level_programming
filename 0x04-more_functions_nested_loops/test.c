@@ -8,19 +8,15 @@
  */
 int main(void)
 {
-	int i, j;
+	int i, n;
 
-	for (i = 0; i <= 9; i++)
-	{
-		for (j = 0; j <= 14; j++)
-		{
-			if (j > 9)
-				putchar((j/10) + 48);
-			putchar((j%10)+48);
-		}
-	
+	printf("enter n : ");
+	scanf("%d", &n);
+	if (n <= 0)
+	       putchar('0');
+	for (i=0; i<n; i++)
+		putchar(35);
+	putchar('\n');	
 
-		putchar('\n');
-	}
 	return (0);
 }
