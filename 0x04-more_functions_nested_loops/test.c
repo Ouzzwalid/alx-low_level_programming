@@ -12,11 +12,14 @@ int main(void)
 
 	printf("enter n : ");
 	scanf("%d", &n);
-	if (n <= 0)
-	       putchar('0');
-	for (i=0; i<n; i++)
-		putchar(35);
-	putchar('\n');	
+	if (n > 0)
+	{
+		for (i = 0; i < n; i++)
+			putchar('#');
+		putchar('\n');
+	}
+	else
+		putchar('\n');	
 
 	return (0);
 }
