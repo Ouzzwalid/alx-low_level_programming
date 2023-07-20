@@ -8,23 +8,18 @@
  */
 int main(void)
 {
-	int i, j, n;
+	int i, j, size;
 
-	printf("enter n : ");
-	scanf("%d", &n);
-	if (n > 0)
+	printf("enter the size : ");
+	scanf("%d", &size);
+	if (size > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (i = 0; i < size; i++)
 		{
-			j = 0;
-			while(j < i)
-			{
-				putchar('.');
-				j++;
-			}
-			putchar('\\');
+			for(j = 0; j < size; j++)
+				putchar('#');
 			putchar('\n');
-		}
+		}	
 	}
 	else
 		putchar('\n');	
