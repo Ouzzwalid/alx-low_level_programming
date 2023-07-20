@@ -8,21 +8,18 @@
  */
 int main(void)
 {
-	int i, j, size;
+	int i;
 
-	printf("enter the size : ");
-	scanf("%d", &size);
-	if (size > 0)
+	for (i = 1; i <= 100; i++)
 	{
-		for (i = 0; i < size; i++)
-		{
-			for(j = 0; j < size; j++)
-				putchar('#');
-			putchar('\n');
-		}	
+		if ((i % 15) == 0)
+			printf("FizzBuzz ");
+		else if ((i % 3) == 0)
+			printf("Fizz ");
+		else if ((i % 5) == 0)
+			printf("Buzz ");
+		else
+			printf("%d ", i);
 	}
-	else
-		putchar('\n');	
-
 	return (0);
 }
