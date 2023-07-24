@@ -18,6 +18,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = *(src + i);
 	}
-	dest[l] = '\0';
+	dest[len] = '\0';
 	return (dest);
 }
