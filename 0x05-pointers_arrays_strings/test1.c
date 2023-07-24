@@ -10,14 +10,23 @@
 int main(void)
 {
 	char *str;
-	int i = 0;
-	str = "walid";
+	int length = 0, i = 0, n ;
+	str = "alid";
 	
 	while (*(str + i) != '\0')
 	{
-		if (i % 2 == 0)
-			putchar(*(str + i));
+		length++;
 		i++;
 	}
+	printf("length = %d\n", length);
+	if (length % 2 == 0)
+		n = length / 2;	
+	else 
+		n = (length - 1) / 2;
+	while (n < length)
+	{
+	       putchar(*(str + n));
+	       n++;
+	}	       
 	putchar('\n');
 }
