@@ -1,32 +1,21 @@
 #include <stdio.h>
-/**
- *_puts2 - prints every other character of a string, starting with
- *the first character followed by a new line, to stdout.
- *
- *@str: the string
- *
- *
- */
+
+
 int main(void)
 {
-	char *str;
-	int length = 0, i = 0, n ;
-	str = "alid";
+	int i=0,n=5, array[5];
 	
-	while (*(str + i) != '\0')
+	array[0] = 98;
+	array[1] = 402;
+	array[2] = -198;
+	array[3] = 298;
+	array[4] = -1024;
+	while (i<n)
 	{
-		length++;
+		printf("%d", array[i]);
 		i++;
+		if (i < n)
+			printf(", ");
 	}
-	printf("length = %d\n", length);
-	if (length % 2 == 0)
-		n = length / 2;	
-	else 
-		n = (length - 1) / 2;
-	while (n < length)
-	{
-	       putchar(*(str + n));
-	       n++;
-	}	       
-	putchar('\n');
+	printf("\n");
 }
