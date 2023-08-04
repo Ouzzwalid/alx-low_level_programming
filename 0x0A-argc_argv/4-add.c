@@ -12,6 +12,7 @@
 int isnumber(char *c)
 {
 	int i = 0, number = 0, len;
+
 	len = strlen(c);
 
 	while (i < len)
