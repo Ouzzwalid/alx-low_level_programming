@@ -1,17 +1,17 @@
 # 0x09. C - Static libraries
 
-##Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-###General
+### General
 
 What is a static library, how does it work, how to create one, and how to use it
 Basic usage of ar, ranlib, nm
 
-###Requirements
+### Requirements
 
-####C
+#### C
 
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -27,7 +27,7 @@ Basic usage of ar, ranlib, nm
 - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
 - Don’t forget to push your header file
 
-####Bash
+#### Bash
 
 - Allowed editors: vi, vim, emacs
 - All your scripts will be tested on Ubuntu 20.04 LTS
