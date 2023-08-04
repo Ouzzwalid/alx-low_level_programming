@@ -13,6 +13,7 @@ int isnumber(char *c)
 {
 	int i = 0, number = 0, len;
 	len = strlen(c);
+
 	while (i < len)
 	{
 		if (c[i] < '0' || c[i] > '9')
