@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ *_strdup - Returns a pointer to a copy of the string given as a parameter.
+ *@str: the string
  *
  *
- *
- *
- *
+ *Return: the copy of th given string
  */
 char *_strdup(char *str)
 {
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	cpy = malloc(size * sizeof(*str));
 	if (cpy == NULL)
 		return (NULL);
-	for (;i < size; i++)
+	for (; i < size; i++)
 		cpy[i] = str[i];
 	return (cpy);
 }
