@@ -1,5 +1,5 @@
 #ifndef HEADER
-#define HEADER
+#define HEADER dog.h
 /**
  *struct dog - define a new structure called dog
  *@name: the name of the dog
